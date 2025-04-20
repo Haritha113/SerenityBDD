@@ -1,0 +1,22 @@
+
+so constructor purpose is to refer driver ro the current class, is it?
+👉 To pass the WebDriver instance from your test (or step definition)
+into the page class so it can be used inside that class.
+
+You are injecting the WebDriver into page classes by passing it through constructors —
+this is Constructor Dependency Injection — a common design pattern in test automation.
+
+
+
+✅ A way to initialize WebDriver
+✅ A way to pass it from one class to another
+✅ A way to make it available in the current class
+
+
+why webdriver is static ?
+🔍 Why static?
+Ensures there's only one instance unless reset manually
+
+Makes it globally accessible without needing to instantiate DriverFactory
+
+Useful in single-threaded BDD frameworks

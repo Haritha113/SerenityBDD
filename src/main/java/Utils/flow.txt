@@ -1,0 +1,7 @@
+DriverFactory → provides WebDriver
+↓
+Step Definitions → call getDriver() from DriverFactory
+↓
+Page Classes → receive driver via constructor from Step Definitions
+↓
+BasePage → stores driver and shares reusable methods

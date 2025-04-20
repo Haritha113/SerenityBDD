@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="93dc6d2b-324b-4b6c-bebb-115c01f94949" name="Changes" comment="steps implemented for user management feature" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Haritha113&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Haritha113/JavaSeleniumBDD.git&quot;,
+    &quot;accountId&quot;: &quot;fd0fec5a-2b6d-4acd-be09-007055206c59&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2vgRTUDnPGeTHkfe0DyrSF17r38" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: login.executor": "Run",
+    "Cucumber Java.Feature: user_management.executor": "Run",
+    "Cucumber Java.Scenario: Add users in Admin tab.executor": "Run",
+    "Cucumber Java.Scenario: login scenario with INvalid credentials.executor": "Run",
+    "Cucumber Java.Scenario: login scenario with valid and credentials.executor": "Run",
+    "Cucumber Java.Scenario: login scenario with valid credentials (1).executor": "Run",
+    "Cucumber Java.Scenario: login scenario with valid credentials.executor": "Run",
+    "JUnit.TestRunner.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/haritha/IdeaProjects/Practice/SerenityBDD",
+    "onboarding.tips.debug.path": "C:/Users/haritha/IdeaProjects/Practice/SeleniumBDD/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\haritha\IdeaProjects\Practice\JavaSeleniumBDD" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\haritha\IdeaProjects\Practice\JavaSeleniumBDD\src\test\java" />
+      <recent name="C:\Users\haritha\IdeaProjects\Practice\JavaSeleniumBDD\src\main" />
+      <recent name="C:\Users\haritha\IdeaProjects\Practice\JavaSeleniumBDD\src\test" />
+      <recent name="C:\Users\haritha\IdeaProjects\Practice\JavaSeleniumBDD\src\test\java\StepDefs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BDDFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="MAIN_CLASS_NAME" value="Runner.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93dc6d2b-324b-4b6c-bebb-115c01f94949" name="Changes" comment="" />
+      <created>1744564739894</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744564739894</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Login feature">
+      <option name="closed" value="true" />
+      <created>1744618815999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744618815999</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Login feature">
+      <option name="closed" value="true" />
+      <created>1744620243267</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744620243267</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Login feature">
+      <option name="closed" value="true" />
+      <created>1744622222305</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744622222305</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Login feature">
+      <option name="closed" value="true" />
+      <created>1744643190965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744643190965</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Logout feature and other few scenarios">
+      <option name="closed" value="true" />
+      <created>1744737906847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744737906847</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed driver errors">
+      <option name="closed" value="true" />
+      <created>1744739990095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744739990095</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added user management feature">
+      <option name="closed" value="true" />
+      <created>1744896688099</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744896688099</updated>
+    </task>
+    <task id="LOCAL-00008" summary="steps implemented for user management feature">
+      <option name="closed" value="true" />
+      <created>1745134568616</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745134568616</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Login feature" />
+    <MESSAGE value="Added Logout feature and other few scenarios" />
+    <MESSAGE value="fixed driver errors" />
+    <MESSAGE value="added user management feature" />
+    <MESSAGE value="steps implemented for user management feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="steps implemented for user management feature" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaSeleniumBDD$Scenario__login_scenario_with_valid_credentials.ic" NAME="Scenario: login scenario with valid credentials Coverage Results" MODIFIED="1744638911825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+  </component>
+</project>
