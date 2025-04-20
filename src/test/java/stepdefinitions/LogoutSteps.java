@@ -1,10 +1,8 @@
 package stepdefinitions;
 
 import Pages.LogoutPage;
-import Utils.DriverFactory;
 import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Steps;
-import org.openqa.selenium.WebDriver;
 
 public class LogoutSteps {
 

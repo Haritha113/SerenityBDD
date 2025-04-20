@@ -74,4 +74,22 @@
     </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.serenity-bdd.maven.plugins</groupId>
+                <artifactId>serenity-maven-plugin</artifactId>
+                <version>4.2.22</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>aggregate</goal> <!-- Generates the index.html -->
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+
 </project>

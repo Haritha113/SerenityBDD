@@ -2,16 +2,12 @@ package stepdefinitions;
 import Pages.LoginPage;
 import Pages.UserMangmntPage;
 import Utils.ConstantsMapper;
-import Utils.DriverFactory;
 import Utils.TestData;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Steps;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-
-import static Utils.ConstantsMapper.*;
 
 public class UserMngmntSteps {
 
@@ -33,7 +29,7 @@ public class UserMngmntSteps {
     @Then("^user should land on (.*) successfully$")
     public void userShouldNavigateToTab(String tabname) {
         tabname = ConstantsMapper.resolve(tabname);
-        String getTabName = userMangmntPage.switchedToTab(tabname);
+        String getTabName = userMangmntPage.getActiveTabTitle(tabname);
         Assert.assertEquals(tabname,getTabName);
     }
 

@@ -1,9 +1,11 @@
 package Pages;
 
-import net.serenitybdd.core.annotations.findby.By;
+
 import net.serenitybdd.core.pages.PageObject;
+import org.openqa.selenium.By;
 
 public class BasePage extends PageObject {
+
 
     public void clickElement(By locator) {
         $(locator).click();
@@ -14,7 +16,7 @@ public class BasePage extends PageObject {
     }
 
     public String getElementText(By locator) {
-        return $(locator).getText();
+        return $(locator).waitUntilVisible().getText(); // default timer in serenity is 5 sec, we can configure in config file
     }
 
     public boolean isElementDisplayed(By locator){

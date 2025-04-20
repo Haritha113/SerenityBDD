@@ -53,6 +53,7 @@
     "Cucumber Java.Scenario: login scenario with valid and credentials.executor": "Run",
     "Cucumber Java.Scenario: login scenario with valid credentials (1).executor": "Run",
     "Cucumber Java.Scenario: login scenario with valid credentials.executor": "Run",
+    "Cucumber Java.Scenario: logout scenario.executor": "Run",
     "JUnit.TestRunner.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -79,7 +80,27 @@
       <recent name="C:\Users\haritha\IdeaProjects\Practice\JavaSeleniumBDD\src\test\java\StepDefs" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Add users in Admin tab">
+    <configuration name="Scenario: Add users in Admin tab" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/user_management.feature" />
+      <option name="GLUE" value="stepdefinitions net.serenitybdd.cucumber.actors" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="BDDFramework" />
+      <option name="NAME_FILTER" value="^Add users in Admin tab$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add users in Admin tab$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add users in Admin tab" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BDDFramework" />
       <extension name="coverage">
@@ -97,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Add users in Admin tab" />
         <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>

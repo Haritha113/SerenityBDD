@@ -1,22 +1,24 @@
+Without @Managed: WebDriver is still managed by Serenity, and it works
+based on the configurations in your properties file.
+You just won't have the ability to directly control theWebDriver instance
+via the @Managed annotation (for example, you can't specify a particular driver for a field).
 
-so constructor purpose is to refer driver ro the current class, is it?
-👉 To pass the WebDriver instance from your test (or step definition)
-into the page class so it can be used inside that class.
+With @Managed: You explicitly control WebDriver initialization for specific page objects
+or steps and specify the driver in the annotation, giving you more fine-grained control.
 
-You are injecting the WebDriver into page classes by passing it through constructors —
-this is Constructor Dependency Injection — a common design pattern in test automation.
+In short,
+you don’t necessarily need @Managed for Serenity to initialize the driver,
+as it handles driver creation internally.
+However, @Managed gives you the ability to fine-tune driver management within specific contexts.
 
-
-
-✅ A way to initialize WebDriver
-✅ A way to pass it from one class to another
-✅ A way to make it available in the current class
+mvn clean verify -Dcucumber.options="src/test/resources/features/login.feature"
+mvn clean verify -Dcucumber.filter.tags="@smoke"
 
 
-why webdriver is static ?
-🔍 Why static?
-Ensures there's only one instance unless reset manually
 
-Makes it globally accessible without needing to instantiate DriverFactory
 
-Useful in single-threaded BDD frameworks
+
+
+
+
+
