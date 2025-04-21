@@ -11,6 +11,7 @@ Feature: user actions on HRM application through Admin option
 Background:
   Given the user is on the login page
 
+  @user
   Scenario Outline: Add users in Admin tab
     When user logs in with <username> and <password>
     And user navigates to <tabname> tab
@@ -18,7 +19,7 @@ Background:
     When User clicks on Add User button
     And User fills details with username password empname for <role> and <status>
     And User clicks on Save button
-    Then user should be listed in the records table with <role>
+    And search and verify for user in the records table with <role> <status>
     Examples:
       | username | password | tabname | role | status |
       | Admin | admin123 | ADMIN_TAB | ROLE_ADMIN | STATUS_ENABLED |

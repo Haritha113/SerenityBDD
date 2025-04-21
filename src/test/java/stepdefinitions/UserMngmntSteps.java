@@ -6,12 +6,13 @@ import Utils.TestData;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.annotations.Steps;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+
+import java.util.Map;
 
 public class UserMngmntSteps {
 
-    @Steps
+
     UserMangmntPage userMangmntPage;
     LoginPage loginPage;
 
@@ -30,7 +31,7 @@ public class UserMngmntSteps {
     public void userShouldNavigateToTab(String tabname) {
         tabname = ConstantsMapper.resolve(tabname);
         String getTabName = userMangmntPage.getActiveTabTitle(tabname);
-        Assert.assertEquals(tabname,getTabName);
+        Assertions.assertEquals(tabname,getTabName);
     }
 
     @When("^User clicks on Add User button$")
@@ -40,7 +41,7 @@ public class UserMngmntSteps {
 
     @And("User clicks on Save button")
     public void userClicksOnSaveButton() {
-        userMangmntPage.submitUserData();
+        userMangmntPage.addUserData();
     }
 
     @And("^User fills details with username password empname for (.*) and (.*)$")
@@ -53,13 +54,27 @@ public class UserMngmntSteps {
 //        System.out.println(TestData.generatedEmpName);
 //        System.out.println(TestData.generatedUsername);
 //        System.out.println(TestData.generatedPassword);
-        TestData.generatedEmpName = userMangmntPage.addUserDetailsAndReturnEmpName(role,status,TestData.generatedEmpName,TestData.generatedUsername,TestData.generatedPassword);
+
+        userMangmntPage.addUserRole(role);
+        userMangmntPage.addStatus(status);
+        userMangmntPage.addUserName(TestData.generatedUsername);
+        userMangmntPage.addPassword(TestData.generatedPassword);
+        TestData.generatedEmpName = userMangmntPage.selectEmpNameFromAutoComplete(TestData.generatedEmpName);
+        System.out.println(TestData.generatedEmpName);
 
     }
 
-    @Then("^user should be listed in the records table with (.*)$")
-    public void checkUserInfo(String role) {
-        userMangmntPage.validateUserInTable(TestData.generatedUsername, TestData.generatedEmpName,role);
+
+    @And("^search and verify for user in the records table with (.*) (.*)$")
+    public void searchUserInfo(String role,String status) {
+        role = ConstantsMapper.resolve(role);
+        status = ConstantsMapper.resolve(status);
+        userMangmntPage.searchUserRecord(TestData.generatedUsername, TestData.generatedEmpName,role,status);
+        Map<String, String> actualData = userMangmntPage.verifyUserRecord(TestData.generatedUsername, TestData.generatedEmpName,role,status);
+        Assertions.assertEquals(TestData.generatedUsername, actualData.get("userName"));
+        Assertions.assertEquals(role, actualData.get("role"));
+        Assertions.assertEquals(TestData.generatedEmpName, actualData.get("empName"));
+        Assertions.assertEquals(status, actualData.get("status"));
 
     }
 

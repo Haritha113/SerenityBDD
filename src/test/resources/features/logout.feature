@@ -1,8 +1,10 @@
+@smoke
 Feature: Logout from HRM application
 
 Background:
   Given the user is on the login page
 
+  @logout
 Scenario Outline: logout scenario
   When user enters <username> and <password>
   And User clicks on login button

@@ -64,6 +64,12 @@
             <version>4.2.22</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd.maven.plugins</groupId>
+            <artifactId>serenity-maven-plugin</artifactId>
+            <version>4.2.17</version>
+            <scope>test</scope>
+        </dependency>
 
 
         <!-- WebDriverManager -->
@@ -72,6 +78,12 @@
         <artifactId>webdrivermanager</artifactId>
         <version>5.8.0</version>
     </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -82,8 +94,10 @@
                 <version>4.2.22</version>
                 <executions>
                     <execution>
+                        <id>serenity-reports</id>
+                        <phase>post-integration-test</phase> <!-- Add this line -->
                         <goals>
-                            <goal>aggregate</goal> <!-- Generates the index.html -->
+                            <goal>aggregate</goal>
                         </goals>
                     </execution>
                 </executions>

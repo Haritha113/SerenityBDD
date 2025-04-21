@@ -2,12 +2,13 @@ package stepdefinitions;
 
 import Pages.LogoutPage;
 import io.cucumber.java.en.When;
+import net.serenitybdd.annotations.Step;
 import net.serenitybdd.annotations.Steps;
 
 public class LogoutSteps {
 
 
-    @Steps
+
     LogoutPage logoutPage; // Serenity will inject the PageObject here
 
     /*
@@ -18,6 +19,7 @@ public class LogoutSteps {
     */
 
     @When("user clicks on logout option")
+
     public void userClicksOnLogoutOption() {
         logoutPage.logout();
     }
